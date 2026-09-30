@@ -7,7 +7,7 @@
  Footer {
      background: rgb(57, 83, 198);
      color: white
-     padding: 20px 6px
+     padding; 20px 6px
      text-align: center;
  }
  .body {
@@ -16,7 +16,7 @@
         background: white;
     }
 
-    .h2 {s
+    .h2 {
         text-align: center;
         color: #555;
         font-size: 18px;
