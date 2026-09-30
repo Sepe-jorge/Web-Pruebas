@@ -1,0 +1,42 @@
+body {
+    border: 1px solid blue;
+    margin: 12px 5px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 5px;
+}
+
+h2 {
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+.imagen {
+    text-align: center;
+    margin: 10px;
+}
+
+.imagen img {
+    width: 110px;
+}
+
+p {
+    font-family: Verdana;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.enlace {
+    border: 2px solid blue;
+    background-color: #ddd;
+    font-size: 10px;
+    margin: 5px;
+}

@@ -1,0 +1,108 @@
+ header{
+	 background: rgb(57, 83, 198);
+	 color: white
+	 padding: 20px 6px
+     text-align: center;
+ }
+ Footer {
+     background: rgb(57, 83, 198);
+     color: white
+     padding: 20px 6px
+     text-align: center;
+ }
+ .body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: white;
+    }
+
+    .h2 {s
+        text-align: center;
+        color: #555;
+        font-size: 18px;
+        margin: 0 0 25px 0;
+        font-style: italic;
+    }
+
+    .horario {
+        width: 95%;
+        margin: auto;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    .horario th,
+    .horario td {
+        border: 1px solid #888;
+    }
+
+    .titulo {
+        height: 40px;
+        font-size: 20px;
+        color: #008c9e;
+        font-weight: normal;
+    }
+
+    .dias {
+        height: 33px;
+        color: #d51919;
+        font-weight: normal;
+    }
+
+    .hora {
+        width: 65px;
+        color: #008c9e;
+        text-align: center;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .clase {
+        height: 118px;
+        vertical-align: middle;
+        padding: 4px;
+        font-size: 10px;
+        position: relative;
+    }
+
+    .clase strong {
+        display: block;
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    .profesor {
+        font-size: 9px;
+    }
+
+    .aula {
+        float: right;
+        font-size: 8px;
+        font-style: italic;
+    }
+
+    .recreo {
+        height: 55px;
+        text-align: center;
+        color: #008c9e;
+        font-size: 12px;
+    }
+
+    /* Colores */
+    .naranja { background: #ff8500; }
+    .rosa { background: #e39af0; }
+    .rojo { background: #bd7a7c; }
+    .verde { background: #00df00; }
+    .rojo-claro { background: #ff7d80; }
+    .turquesa { background: #72e8e8; }
+    .morado { background: #8181bd; }
+    .amarillo { background: #ffff61; }
+    .melocoton { background: #ffc98f; }
+    .verde-oscuro { background: #00b86b; }
+
+    .thead td,
+    .thead th {
+        background: var(--primary-bg);
+        color: #35bca1;
+        font-weight: 100px;
+    }
