@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+.contenedor {
+  width: min(92vw, 1000px);
+  margin: 0 auto;
+  padding: 22px 18px 40px;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.intro {
+  margin: 0 0 22px;
+  font-size: 1.05rem;
+}
+
+.lista-box {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto 24px;
+  border-top: 2px solid #6f6f6f;
+  padding-top: 0;
+}
+
+.titulo-barra {
+  width: 100%;
+  background: #7bdaf1;
+  color: #111;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 4px 0;
+  margin: 0;
+}
+
+.lista-sin-orden,
+.lista-ordenada {
+  margin: 0;
+  padding: 10px 0 0 34px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.lista-sin-orden {
+  list-style-type: square;
+}
+
+.lista-ordenada {
+  list-style-type: decimal;
+}
+
+.sublista {
+  margin-top: 2px;
+  padding-left: 22px;
+  list-style-type: square;
+}
+
+.sublista-letras {
+  list-style-type: lower-alpha;
+}
+
+li {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .contenedor {
+    width: min(96vw, 760px);
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .lista-sin-orden,
+  .lista-ordenada {
+    font-size: 0.92rem;
+  }
+}

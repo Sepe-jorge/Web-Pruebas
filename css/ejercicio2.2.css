@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #efefef;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+.contenedor {
+  width: min(92vw, 980px);
+  margin: 0 auto;
+  padding: 22px 18px 40px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 28px;
+  font-size: 1.05rem;
+}
+
+.panel {
+  width: min(100%, 760px);
+  margin: 0 auto 26px;
+  padding: 0 0 16px;
+  border: 2px solid #5ebabd;
+  background: #f5f5f5;
+}
+
+.panel-vertical {
+  padding-bottom: 0;
+}
+
+h3 {
+  margin: 0 0 16px;
+  padding: 0 0 0 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-style: italic;
+  text-align: left;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background: #c2b79a;
+  border: 1px solid #7ea9c9;
+}
+
+.menu-horizontal li {
+  flex: 1 1 0;
+  border-right: 1px solid #7ea9c9;
+}
+
+.menu-horizontal li:last-child {
+  border-right: none;
+}
+
+.menu-horizontal a,
+.menu-vertical a {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.menu-horizontal a {
+  padding: 10px 8px;
+  font-size: 1rem;
+}
+
+.menu-vertical {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: min(100%, 350px);
+  border: 2px solid #5fc9ef;
+}
+
+.menu-vertical li {
+  margin: 0;
+}
+
+.menu-vertical li:nth-child(1) {
+  background: #8fe78d;
+}
+
+.menu-vertical li:nth-child(2) {
+  background: #ff5f5f;
+}
+
+.menu-vertical li:nth-child(3) {
+  background: #ff5f5f;
+}
+
+.menu-vertical li:nth-child(4) {
+  background: #ff5f5f;
+}
+
+.menu-vertical li:nth-child(5) {
+  background: #8fe78d;
+}
+
+.menu-vertical a {
+  padding: 8px 10px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .contenedor {
+    width: min(96vw, 760px);
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .menu-horizontal {
+    flex-wrap: wrap;
+  }
+
+  .menu-horizontal li {
+    flex-basis: 50%;
+    border-bottom: 1px solid #7ea9c9;
+  }
+
+  .menu-horizontal li:nth-child(2n) {
+    border-right: none;
+  }
+
+  .menu-horizontal li:last-child {
+    border-bottom: none;
+  }
+}

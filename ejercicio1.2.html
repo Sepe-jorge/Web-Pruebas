@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Ejercicio 2</title>
-    <link rel="stylesheet" href="css/ejercicio1.2.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1.2</title>
+    <link rel="stylesheet" href="css/ejercicio1.2.css" />
+  </head>
+  <body>
+    <main class="contenedor">
+      <h1>Ejercicios HTML: Formato del texto, hipervínculos y tablas</h1>
 
-<body>
+      <section class="ejercicio">
+        <h2>Ejercicio 2:</h2>
+        <p>
+          Intenta realizar una página lo más parecida posible, teniendo en cuenta que dentro de la
+          página hay un marcador para ir al capítulo 4 y un hipervínculo a la página de Google.
+          Ten en cuenta también el estilo y la imagen de fondo de la flor.
+        </p>
 
-    <h4>Esto es un encabezado h4 h2</h4>
+        <div class="panel-flor">
+          <img class="flor" src="imagenes/flor.jpg" alt="Flor" />
 
-    <!-- Marcador para ir al capítulo 4 -->
-    <a href="#capitulo4" class="boton">Ir a capítulo 4:</a>
+          <h4 class="titulo-flor">Esto es un encabezado h4 <mark>h2</mark></h4>
 
-    <pre>
-Esto es un texto
-preformateado
-    </pre>
+          <a class="enlace-capitulo" href="#capitulo4">Ir a capítulo 4</a>
 
-    <!-- Enlace a Google -->
-    <p>
-        Este hipervínculo va a google
-        <a href="https://www.google.com" class="boton">Ir a google:</a>
-    </p>
-<background img src="imagenes/flor.jpg" alt="Imagen de fondo">
-    <!-- Capítulo 4 -->
-    <div id="capitulo4">
-        <small>hipervínculo en la misma página</small>
-        <br>
-        <b>Esto es el Capítulo 4</b>
-    </div>
+          <pre class="texto-preformateado">esto es un texto
+preformateado</pre>
 
-</body>
+          <p class="texto-enlace">
+            Este hipervínculo va a <strong>google</strong>
+          </p>
+          <a class="enlace-google" href="https://www.google.com" target="_blank" rel="noreferrer">
+            Ir a google
+          </a>
+
+          <section id="capitulo4" class="capitulo4">
+            <a href="#capitulo4">hipervínculo en la misma página</a>
+            <strong>Esto es el Capítulo 4</strong>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

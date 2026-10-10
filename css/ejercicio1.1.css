@@ -1,42 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    border: 1px solid blue;
-    margin: 12px 5px;
+  margin: 0;
+  background: #efefef;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
 }
 
-h1 {
-    font-size: 20px;
-    margin: 5px;
+.contenedor {
+  width: min(92vw, 980px);
+  margin: 0 auto;
+  padding: 18px 10px 40px;
 }
 
-h2 {
-    color: red;
-    font-size: 14px;
-    font-style: italic;
-    margin-left: 5px;
+.titulo-principal {
+  margin: 0 0 18px;
+  font-size: clamp(1.8rem, 2vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.imagen {
-    text-align: center;
-    margin: 10px;
+.ejercicio h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.5rem, 2vw, 2.1rem);
+  font-weight: 700;
 }
 
-.imagen img {
-    width: 110px;
+.instruccion {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
-p {
-    font-family: Verdana;
-    font-size: 20px;
-    margin: 5px;
+.mockup {
+  width: min(100%, 840px);
+  margin: 0 auto;
+  background: #f2f2f2;
+  border: 2px solid #7aaad6;
+  padding: 14px 16px 0;
+  min-height: 290px;
 }
 
-.amarillo {
-    background-color: yellow;
+.h1-demo,
+.h2-demo {
+  margin: 0;
+  font-weight: 700;
+  color: #ff2d2d;
+  line-height: 1.2;
 }
 
-.enlace {
-    border: 2px solid blue;
-    background-color: #ddd;
-    font-size: 10px;
-    margin: 5px;
+.h1-demo {
+  font-size: 1.5rem;
+}
+
+.h2-demo {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.imagen-ejemplo {
+  display: block;
+  width: 140px;
+  height: 100px;
+  margin: 12px auto 14px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 122, 122, 0.08);
+}
+
+.parrafo-demo {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.4;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #111;
+}
+
+.parrafo-demo strong {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0 8px;
+  line-height: 1.4;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.hipervinculo-demo {
+  margin-top: 12px;
+  border-top: 2px solid #7aaad6;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.hipervinculo-demo a {
+  color: #0d6efd;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .contenedor {
+    width: min(96vw, 760px);
+  }
+
+  .parrafo-demo {
+    font-size: 22px;
+  }
 }
