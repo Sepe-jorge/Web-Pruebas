@@ -1,0 +1,152 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f1f5f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 24px 20px 18px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #164e63, #0f766e);
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.18);
+}
+
+header h1 {
+  margin: 0 0 18px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  padding: 9px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+main {
+  width: min(100% - 32px, 1000px);
+  margin: 38px auto;
+  flex: 1;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 24px;
+  border: 1px solid #cbd5e1;
+  border-top: 5px solid #0f766e;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+fieldset:nth-child(2) {
+  border-top-color: #f59e0b;
+}
+
+legend {
+  padding: 0 8px;
+  color: #0f766e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+fieldset:nth-child(2) legend {
+  color: #b45309;
+}
+
+fieldset br {
+  display: none;
+}
+
+label {
+  display: block;
+  margin: 14px 0 6px;
+  color: #334155;
+  font-weight: 600;
+}
+
+input {
+  display: block;
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: #f8fafc;
+  color: #1f2937;
+  font: inherit;
+}
+
+input:focus {
+  outline: 3px solid rgba(13, 148, 136, 0.2);
+  border-color: #0f766e;
+  background: #fff;
+}
+
+footer {
+  padding: 18px 20px;
+  color: #e2e8f0;
+  text-align: center;
+  background: #0f172a;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #5eead4;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding-inline: 14px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  main {
+    margin-block: 24px;
+  }
+
+  fieldset {
+    padding: 20px;
+  }
+}
