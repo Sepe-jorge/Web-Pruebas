@@ -13,3 +13,4 @@ else if ((jugador === "piedra" && computadora === "tijera") ||
 } else {
     console.log("Gana la maquina");
 }      
+}
