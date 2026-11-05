@@ -203,7 +203,11 @@ console.log("\n===== COMPROBAR LA COMPRA =====");
 
 // Escribe tu código aquí.
 
-
+if (precio > 20) {
+    console.log("Es un producto caro");
+} else {
+    console.log("Es un producto económico");
+}
 
 // TAREA 13.
 // Comprueba si hay suficientes unidades en stock
@@ -250,7 +254,8 @@ console.log("\n===== COMPROBACIONES =====");
 
 // Escribe tu código aquí.
 
-
+let tiendaAbierta = true;
+let pagoRealizado = false;
 
 // TAREA 16.
 // Muestra por consola los valores de ambas variables.
@@ -374,6 +379,13 @@ console.log("\n===== FUNCIONES DE LA TIENDA =====");
 
 // Escribe tu código aquí.
 
+function comprobarStock(stockDisponible, unidadesSolicitadas) {
+    if (stockDisponible >= unidadesSolicitadas) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
 // =======================================================
