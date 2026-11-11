@@ -161,6 +161,8 @@ console.log("\n===== CALCULAR UNA COMPRA =====");
 // / división
 
 // Escribe tu código aquí.
+let unidadesCompradas = 3;
+let totalCompra = precio * unidadesCompradas;
 
 
 
@@ -169,7 +171,8 @@ console.log("\n===== CALCULAR UNA COMPRA =====");
 // y el importe total de la compra.
 
 // Escribe tu código aquí.
-
+console.log("Unidades compradas:", unidadesCompradas);
+console.log("Total de la compra:", totalCompra, "euros");
 
 
 // TAREA 11.
@@ -182,7 +185,9 @@ console.log("\n===== CALCULAR UNA COMPRA =====");
 // Total con descuento = totalCompra - descuento
 
 // Escribe tu código aquí.
-
+let descuento = 4;
+let totalConDescuento = (precio * 2) - descuento;
+let precioUnidad = totalConDescuento / 2;
 
 
 // =======================================================
@@ -222,7 +227,11 @@ if (precio > 20) {
 
 // Escribe tu código aquí.
 
-
+if (stock >= unidadesCompradas) {
+    console.log("Hay stock suficiente");
+} else {
+    console.log("No hay stock suficiente");
+}
 
 // TAREA 14.
 // Comprueba si el cliente puede recibir un descuento.
@@ -236,7 +245,11 @@ if (precio > 20) {
 // "El cliente no tiene descuento".
 
 // Escribe tu código aquí.
-
+if (unidadesCompradas >= 3) {
+    console.log("El cliente tiene descuento");
+} else {
+    console.log("El cliente no tiene descuento");
+}
 
 
 // =======================================================
@@ -262,6 +275,8 @@ let pagoRealizado = false;
 
 // Escribe tu código aquí.
 
+console.log("¿Está abierta la tienda?", tiendaAbierta);
+console.log("¿Se ha realizado el pago?", pagoRealizado);
 
 
 // TAREA 17.
@@ -277,6 +292,11 @@ let pagoRealizado = false;
 
 // Escribe tu código aquí.
 
+if (tiendaAbierta && pagoRealizado) {
+    console.log("Pedido confirmado");
+} else {
+    console.log("Pedido pendiente");
+}
 
 
 // =======================================================
@@ -296,7 +316,9 @@ console.log("\n===== LISTA DE PRODUCTOS =====");
 // - Accede a productos[i].
 //
 // Escribe tu código aquí.
-
+for (let i = 0; i < productos.length; i++) {
+    console.log(productos[i]);
+}
 
 
 // TAREA 19.
@@ -308,8 +330,9 @@ console.log("\n===== LISTA DE PRODUCTOS =====");
 //
 // Escribe tu código aquí.
 
-
-
+for (let producto of productos) {
+    console.log(producto);
+}
 // TAREA 20.
 // Utiliza un bucle for para mostrar los números
 // del 1 al 5.
@@ -323,7 +346,9 @@ console.log("\n===== LISTA DE PRODUCTOS =====");
 
 // Escribe tu código aquí.
 
-
+for (let i = 1; i <= 5; i++) {
+    console.log("Número:", i);
+}
 
 // =======================================================
 // APARTADO 7. FUNCIONES
@@ -340,7 +365,10 @@ console.log("\n===== FUNCIONES DE LA TIENDA =====");
 // Después, llama a la función para ejecutarla.
 
 // Escribe tu código aquí.
-
+function saludarCliente() {
+    console.log("Gracias por visitar nuestra tienda");
+}
+saludarCliente();
 
 
 // TAREA 22.
@@ -359,7 +387,11 @@ console.log("\n===== FUNCIONES DE LA TIENDA =====");
 // calcularTotal(10, 3) devuelve 30.
 
 // Escribe tu código aquí.
+function calcularTotal(precioProducto, cantidad) {
+    return precioProducto * cantidad;
+}
 
+console.log("Total:", calcularTotal(10, 3));    
 
 
 // TAREA 23.
@@ -408,7 +440,12 @@ console.log("\n===== RESUMEN DE LA COMPRA =====");
 // Puedes utilizar varios console.log().
 
 // Escribe tu código aquí.
-
+console.log("Nombre de la tienda:", nombreTienda);
+console.log("Productos disponibles:", productos);
+console.log("Producto seleccionado:", nombreProducto);
+console.log("Precio por unidad:", precio, "euros");
+console.log("Unidades compradas:", unidadesCompradas);
+console.log("Precio total:", totalCompra, "euros");
 
 
 // TAREA 25. RETO FINAL OPCIONAL.
@@ -430,7 +467,11 @@ console.log("\n===== RESUMEN DE LA COMPRA =====");
 // "No se puede completar la compra".
 //
 // Escribe tu código aquí.
-
+if (comprobarStock(stock, unidadesCompradas) && tiendaAbierta && pagoRealizado) {
+    console.log("Compra realizada correctamente");
+} else {
+    console.log("No se puede completar la compra");
+}
 
 
 // =======================================================
