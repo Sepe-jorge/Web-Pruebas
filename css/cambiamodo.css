@@ -1,7 +1,28 @@
-body{
-    background-color: #f70def;
+/* Modo claro */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
 }
-header,footer, main{
-    color: #ffffff;
+
+/* Modo oscuro */
+body.oscuro {
+    background-color: black;
+    color: white;
 }
-    
+
+/* Botón */
+#cambiarColor {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+body.oscuro #cambiarColor {
+    background-color: white;
+    color: black;
+}

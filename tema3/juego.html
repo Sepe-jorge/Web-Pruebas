@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Piedra, Papel o Tijera</title>
+    <script src="../js/juego.js" defer></script>
+</head>
+<body>
+      <header>
+      <h1>Mi primera WEB de Lenguajes de marcas</h1>
+      <h2>Menu:</h2>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="horario.html"> tabla Horario</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="ejercicio1.1.html">primer ejercicio</a>
+        <a href="ejercicio1.2.html">segundo ejercicio</a>
+        <a href="ejercicio1.3.html">tercer ejercicio</a>
+        <a href="ejercicio2.1.html">ejercicio 2.1</a>
+        <a href="ejercicio2.2.html">ejercicio 2.2</a>
+        <a href="ejercicio3.1.html">ejercicio 3.1</a>
+        <a href="calculadora.html">calculadora.html</a>
+        
+      </nav>
+    </header>
+
+<main>
+    <h1>Juego de Piedra, Papel o Tijera</h1>
+    <p>Elige una opción:</p>
+      <div class="contenedor">
+
+        <h1>Piedra, Papel o Tijera</h1>
+
+        <p>Elige una opción:</p>
+
+        <div class="opciones">
+            <button onclick="jugar('piedra')">Piedra</button>
+            <button onclick="jugar('papel')">Papel</button>
+            <button onclick="jugar('tijera')">Tijera</button>
+        </div>
+
+        <h2>Resultados</h2>
+
+        <p id="usuario">Tu elección: -</p>
+        <p id="maquina">Máquina: -</p>
+
+
+    </div>
+
+<div class="marcador">
+    <h2>Marcador</h2>
+
+    <p>Jugador: <span id="puntosUsuario">0</span></p>
+
+    <p>Máquina: <span id="puntosMaquina">0</span></p>
+</div>
+
+</main>
+</body>
+</html>
